@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "tailwindcss ./src/globals.css --output ./src/global.output.css && next build",
-    "dev": "concurrently \"next dev\" \"tailwindcss --input ./src/globals.css --output ./src/global.output.css --watch\"",
+    "build": "tailwindcss ./src/app/globals.css --output ./src/app/global.output.css && next build",
+    "dev": "concurrently \"next dev\" \"tailwindcss --input ./src/app/globals.css --output ./src/app/global.output.css --watch\"",
+    "deploy:dev": "tailwindcss ./src/app/globals.css --output ./src/app/global.output.css && next build && netlify deploy --prod",
     "start": "next start",
     "lint": "next lint"
   },
