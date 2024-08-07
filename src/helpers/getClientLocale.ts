@@ -1,8 +1,9 @@
 "use client";
 
-import { DEFAULT_LENGUAGE_CODE, getLocaleFromPathname } from "./getServerLocale";
+import { Locale } from "@/types";
+import { DEFAULT_LENGUAGE_CODE, getLocaleFromPathname } from "./getLocaleFromPathname";
 
-export const getClientLocale = () => {
+export const getClientLocale = (): Locale => {
   if (typeof window !== "undefined") {
     const pathname = window.location.pathname;
     const locale = getLocaleFromPathname(pathname);
