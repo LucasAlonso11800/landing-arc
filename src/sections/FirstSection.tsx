@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function FirstSection() {
   return (
-    <section className="relative bg-secondary pt-[124px] px-8 bg-first-section">
+    <section className="relative bg-secondary pt-[124px] pb-8 px-8 bg-first-section">
         <div className="container z-10 mx-auto flex items-center justify-between">
             <div className='text-white max-w-[520px]'>
                 <h1 className='leading-none text-[88px] tracking-tight font-bold mb-7'>Impulsa tu Negocio con <br/>
