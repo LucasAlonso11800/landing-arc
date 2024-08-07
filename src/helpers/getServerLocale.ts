@@ -1,13 +1,14 @@
 import { headers } from "next/headers";
 
 const LOCALE_REGEX = /\/([a-zA-Z]{2}(?:-[a-zA-Z]{2})?)($|\/)/;
+export const DEFAULT_LENGUAGE_CODE = 'en-US'
 
-const getLocaleFromPathname = (pathname: string) => {
+export const getLocaleFromPathname = (pathname: string) => {
     const match = pathname.match(LOCALE_REGEX);
     if (match && match[1]) {
       return match[1];
     } else {
-      return 'en-US';
+      return DEFAULT_LENGUAGE_CODE;
     }
 };
 
