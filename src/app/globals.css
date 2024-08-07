@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.bg-first-section {
+  background-image: url('/backgrounds/grid-layers.png'), url('/backgrounds/another-image.png');
+  background-size: cover, cover;
+  background-position: center, center;
+}
