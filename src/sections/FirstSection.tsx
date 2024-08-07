@@ -14,13 +14,13 @@ export default function FirstSection() {
             </div>
             <div>
                 <div className="relative">
-                    <img src="/ilustracion-ads.png" alt="Ilustracion" className='ml-16 max-w-[588px]' />
+                    <img src="/static/ilustracion-ads.png" alt="Ilustracion" className='ml-16 max-w-[588px]' />
                     <div className="absolute -bottom-4 right-8 z-10 flex items center">
-                        <img src="/ilustracion-card-ads.png" alt="Ilustracion Card" className='max-w-[200px]' />
-                        <img src="/ilustracion-card-ads-2.png" alt="Ilustracion Card 2" className='max-w-[200px]' />
+                        <img src="/static/ilustracion-card-ads.png" alt="Ilustracion Card" className='max-w-[200px]' />
+                        <img src="/static/ilustracion-card-ads-2.png" alt="Ilustracion Card 2" className='max-w-[200px]' />
                     </div>
                 </div>
-                <img src="/testimonial-main.png" alt="Testimonial" className='max-w-[630px]'/>
+                <img src="/static/testimonial-main.png" alt="Testimonial" className='max-w-[630px]'/>
             </div>
         </div>
     </section>

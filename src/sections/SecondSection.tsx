@@ -4,9 +4,9 @@ export default function SecondSection() {
   return (
     <section className="relative w-full py-24 px-8">
         <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between">
-            <img src="/ilustracion-multi-ads.png" alt="Multi Ads" />
+            <img src="/static/ilustracion-multi-ads.png" alt="Multi Ads" />
             <div className="mb-6 lg:mb-0 lg:ml-16 text-black">
-                <img src="/google-ads.png" alt="Google Ads" className='max-w-[250px] mb-6'/>
+                <img src="/static/google-ads.png" alt="Google Ads" className='max-w-[250px] mb-6'/>
                 <h2 className="font-semibold text-2xl sm:text-3xl lg:text-4xl xl:text-[52px] xl:leading-[63px] mb-6">
                     Obtenga un mejor retorno de la inversión
                 </h2>
