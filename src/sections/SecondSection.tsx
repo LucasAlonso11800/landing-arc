@@ -25,7 +25,7 @@ export default function SecondSection() {
   const { heading, description, name, title } = texts[locale];
 
   return (
-    <section className="relative w-full py-24 px-8">
+    <section className="relative w-full py-24 px-4 sm:px-8">
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between">
         <img src="/static/ilustracion-multi-ads.png" alt="Multi Ads" />
         <div className="mb-6 lg:mb-0 lg:ml-16 text-black">

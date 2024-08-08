@@ -10,7 +10,7 @@ const texts = {
     buttonText: 'Send'
   },
   'es-ES': {
-    placeholder: 'Ingresa tu correo electrónico',
+    placeholder: 'Ingresa tu email',
     buttonText: 'Enviar'
   }
 };
@@ -20,7 +20,7 @@ export default function ContactInput() {
   const { placeholder, buttonText } = texts[locale];
 
   return (
-    <div className="flex items-center bg-white p-2 rounded-full shadow-md p-2.5 pl-6 rounded-[32px]">
+    <div className="flex items-center bg-white p-2 rounded-full shadow-md p-2.5 md:pl-6 rounded-[32px] max-w-[490px]">
       <img src="/static/icons/mail-outline.png" alt="Email Icon" className="w-6 h-6" />
       <input
         type="email"

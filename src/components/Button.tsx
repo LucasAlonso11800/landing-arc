@@ -11,11 +11,11 @@ export default function Button({ children, iconUrl, gradient = false }: Props) {
   return (
     <button
       className={classNames(
-        'flex items-center justify-center text-white text-lg font-bold py-2 px-5 rounded-[32px] bg-primary transition-all hover:bg-primaryLight',
+        'flex items-center justify-center text-white xl:text-lg font-bold py-2 px-5 rounded-[32px] bg-primary transition-all hover:bg-primaryLight',
       )}
     >
       {children}
-      {iconUrl && <img src={iconUrl} alt="icon" className="ml-2 pt-0.5" />}
+      {iconUrl && <img src={iconUrl} alt="icon" className="hidden sm:block ml-2 pt-0.5" />}
     </button>
   );
 }

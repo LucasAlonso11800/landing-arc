@@ -20,25 +20,25 @@ export default function FirstSection() {
   const { title, highlightedTitle, description } = texts[locale];
 
   return (
-    <section className="relative bg-secondary pt-[124px] pb-8 px-8 bg-first-section">
+    <section className="relative bg-secondary pt-[120px] pb-8 px-4 sm:px-8 bg-first-section">
       <div className="container z-10 mx-auto flex items-center justify-between">
-        <div className='text-white max-w-[520px]'>
-          <h1 className='leading-none text-[88px] tracking-tight font-bold mb-7'>
+        <div className='max-w-full text-white max-w-[520px]'>
+          <h1 className='leading-none text-3xl sm:text-4xl lg:text-6xl xl:text-[88px] tracking-tight font-bold mb-7'>
             {title} <br/>
             <span className='text-primary'>{highlightedTitle}</span>
           </h1>
-          <p className='text-xl mb-10 leading-tight font-semibold'>{description}</p>
+          <p className='sm:text-lg lg:text-xl mb-10 leading-tight font-semibold'>{description}</p>
           <ContactInput />
         </div>
-        <div>
+        <div className='hidden md:block'>
           <div className="relative">
-            <img src="/static/ilustracion-ads.png" alt="Ilustracion" className='ml-16 max-w-[588px]' />
-            <div className="absolute -bottom-4 right-8 z-10 flex items center">
-              <img src="/static/ilustracion-card-ads.png" alt="Ilustracion Card" className='max-w-[200px]' />
-              <img src="/static/ilustracion-card-ads-2.png" alt="Ilustracion Card 2" className='max-w-[200px]' />
+            <img src="/static/ilustracion-ads.png" alt="Ilustracion" className='ml-8 xl:ml-16 w-full xl:max-w-[588px]' />
+            <div className="absolute -bottom-4 right-0 xl:right-8 z-10 flex items center">
+              <img src="/static/ilustracion-card-ads.png" alt="Ilustracion Card" className='max-w-[150px] xl:max-w-[200px]' />
+              <img src="/static/ilustracion-card-ads-2.png" alt="Ilustracion Card 2" className='max-w-[150px] xl:max-w-[200px]' />
             </div>
           </div>
-          <img src="/static/testimonial-main.png" alt="Testimonial" className='max-w-[630px]'/>
+          <img src="/static/testimonial-main.png" alt="Testimonial" className='w-full max-w-[630px]'/>
         </div>
       </div>
     </section>
