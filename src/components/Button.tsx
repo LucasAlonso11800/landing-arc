@@ -16,7 +16,7 @@ export default function Button({ children, iconUrl, gradient = false }: Props) {
       )}
     >
       {children}
-      {iconUrl && <Image src={iconUrl} alt="icon" className="hidden sm:block ml-2 pt-0.5" />}
+      {iconUrl && <Image src={iconUrl} alt="icon" width={16} height={16} className="hidden sm:block ml-2 pt-0.5" />}
     </button>
   );
 }
