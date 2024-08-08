@@ -15,6 +15,12 @@ const config: Config = {
         secondary: '#0E2942',
         gray: '#343A40'
       },
+      fontSize: {
+        title: ['52px', '63px']
+      },
+      width: {
+        '1/8': '12.5%'
+      }
     },
   },
   plugins: [],

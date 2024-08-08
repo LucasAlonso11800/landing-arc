@@ -27,7 +27,7 @@ body {
 }
 
 .bg-first-section {
-  background-image: url('/backgrounds/grid-layers.png'), url('/backgrounds/another-image.png');
+  background-image: url('/static/backgrounds/grid-layers.png'), url('/static/backgrounds/lights.png');
   background-size: cover, cover;
   background-position: center, center;
 }
