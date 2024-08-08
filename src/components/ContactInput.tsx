@@ -3,6 +3,7 @@
 import React from 'react';
 import Button from './Button';
 import { getClientLocale } from '@/helpers/getClientLocale';
+import Image from 'next/image';
 
 const texts = {
   'en-US': {
@@ -21,7 +22,7 @@ export default function ContactInput() {
 
   return (
     <div className="flex items-center bg-white p-2 rounded-full shadow-md p-2.5 md:pl-6 rounded-[32px] max-w-[490px]">
-      <img src="/static/icons/mail-outline.png" alt="Email Icon" className="w-6 h-6" />
+      <Image src="/static/icons/mail-outline.png" alt="Email Icon" className="w-6 h-6" />
       <input
         type="email"
         placeholder={placeholder}

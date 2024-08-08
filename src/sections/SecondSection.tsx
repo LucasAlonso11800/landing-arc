@@ -1,5 +1,6 @@
 // components/SecondSection.tsx
 import { getServerLocale } from '@/helpers/getServerLocale';
+import Image from 'next/image';
 import React from 'react';
 
 const texts = {
@@ -27,9 +28,9 @@ export default function SecondSection() {
   return (
     <section className="relative w-full py-12 md:py-24 px-4 sm:px-8">
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between">
-        <img src="/static/ilustracion-multi-ads.png" alt="Multi Ads" />
+        <Image src="/static/ilustracion-multi-ads.png" alt="Multi Ads" />
         <div className="mb-6 lg:mb-0 lg:ml-16 text-black">
-          <img src="/static/google-ads.png" alt="Google Ads" className='max-w-[250px] mb-6'/>
+          <Image src="/static/google-ads.png" alt="Google Ads" className='max-w-[250px] mb-6'/>
           <h2 className="font-semibold text-2xl sm:text-3xl lg:text-4xl xl:text-title mb-6">
             {heading}
           </h2>

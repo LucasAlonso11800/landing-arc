@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContactInput } from '@/components';
 import { getServerLocale } from '@/helpers/getServerLocale';
+import Image from 'next/image';
 
 const texts = {
   'en-US': {
@@ -32,13 +33,13 @@ export default function FirstSection() {
         </div>
         <div className='hidden md:block'>
           <div className="relative">
-            <img src="/static/ilustracion-ads.png" alt="Ilustracion" className='ml-8 xl:ml-16 w-full xl:max-w-[588px]' />
+            <Image src="/static/ilustracion-ads.png" alt="Ilustracion" className='ml-8 xl:ml-16 w-full xl:max-w-[588px]' />
             <div className="absolute -bottom-4 right-0 xl:right-8 z-10 flex items center">
-              <img src="/static/ilustracion-card-ads.png" alt="Ilustracion Card" className='max-w-[150px] xl:max-w-[200px]' />
-              <img src="/static/ilustracion-card-ads-2.png" alt="Ilustracion Card 2" className='max-w-[150px] xl:max-w-[200px]' />
+              <Image src="/static/ilustracion-card-ads.png" alt="Ilustracion Card" className='max-w-[150px] xl:max-w-[200px]' />
+              <Image src="/static/ilustracion-card-ads-2.png" alt="Ilustracion Card 2" className='max-w-[150px] xl:max-w-[200px]' />
             </div>
           </div>
-          <img src="/static/testimonial-main.png" alt="Testimonial" className='w-full max-w-[630px]'/>
+          <Image src="/static/testimonial-main.png" alt="Testimonial" className='w-full max-w-[630px]'/>
         </div>
       </div>
     </section>

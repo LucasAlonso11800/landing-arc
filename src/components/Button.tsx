@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import Image from 'next/image';
 
 type Props = {
   children: React.ReactNode;
@@ -15,7 +16,7 @@ export default function Button({ children, iconUrl, gradient = false }: Props) {
       )}
     >
       {children}
-      {iconUrl && <img src={iconUrl} alt="icon" className="hidden sm:block ml-2 pt-0.5" />}
+      {iconUrl && <Image src={iconUrl} alt="icon" className="hidden sm:block ml-2 pt-0.5" />}
     </button>
   );
 }
