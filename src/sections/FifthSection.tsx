@@ -24,7 +24,7 @@ export default function FifthSection() {
           <h2 className='max-w-[610px] mb-2 text-2xl sm:text-3xl lg:text-5xl xl:text-[66px] xl:leading-tight font-semibold'>
             {heading}
           </h2>
-          <p className='text-lg lg:text-2xl xl:text-[32px]'>
+          <p className='sm:text-lg lg:text-2xl xl:text-[32px]'>
             {description}
           </p>
         </div>
