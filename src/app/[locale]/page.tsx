@@ -1,5 +1,5 @@
 import { Header } from "@/components";
-import { FirstSection, SecondSection, ThirdSection } from "@/sections";
+import { FifthSection, FirstSection, SecondSection, ThirdSection } from "@/sections";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
+      <FifthSection />
     </main>
   );
 }
