@@ -1,4 +1,4 @@
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 import { FifthSection, FirstSection, SecondSection, SeventhSection, ThirdSection } from "@/sections";
 
 export default function Home() {
@@ -10,6 +10,7 @@ export default function Home() {
       <ThirdSection />
       <FifthSection />
       <SeventhSection />
+      <Footer />
     </main>
   );
 }
