@@ -36,8 +36,8 @@ export default function FourthSection() {
 
   return (
     <section className='py-32 px-4 sm:px-8'>
-      <div className="container mx-auto flex flex-col md:flex-row items-center">
-        <div className='grow min-w-[300px] mb-16 md:mb-0'>
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-around">
+        <div className='min-w-[300px] mb-16 md:mb-0'>
           <div className="flex items-center mb-5">
             <Image
               width={32}
