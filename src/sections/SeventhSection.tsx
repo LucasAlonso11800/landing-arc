@@ -1,40 +1,54 @@
-import { ContactInput } from '@/components';
-import { getServerLocale } from '@/helpers/getServerLocale';
-import Image from 'next/image';
 import React from 'react';
+import { TestimonialCard } from '@/components';
 
-const texts = {
-  'en-US': {
-    heading: 'Talk to the Google Ads Experts Now',
-    description: 'Over 90% of our clients see a 30% increase in Google Ads conversions in the first three months.'
+const testimonials = [
+  {
+    name: 'Juan Pérez',
+    title: 'CEO, Empresa A',
+    image: '/static/testimonial-1.png',
+    description: 'El servicio fue excelente y superó nuestras expectativas. ¡Muy recomendable!',
   },
-  'es-ES': {
-    heading: 'Habla con los expertos de Google Ads ahora',
-    description: 'Más del 90% de nuestros clientes ven un aumento del 30% en sus conversiones de Google Ads en los primeros tres meses.'
-  }
-};
+  {
+    name: 'Carlos Rodríguez',
+    title: 'Director de Marketing, Empresa B',
+    image: '/static/testimonial-2.png',
+    description: 'Los resultados fueron muy buenos.',
+  },
+  {
+    name: 'María García',
+    title: 'Gerente de Operaciones, Empresa C',
+    image: '/static/testimonial-3.png',
+    description: 'Un equipo profesional y dedicado. Lograron exactamente lo que necesitábamos.',
+  },
+  {
+    name: 'Mariano Diaz',
+    title: 'Fundador, Empresa D',
+    image: '/static/testimonial-4.png',
+    description: 'La atención al cliente fue excelente.',
+  },
+];
 
 export default function SeventhSection() {
-  const locale = getServerLocale();
-  const { heading, description } = texts[locale];
-
   return (
-    <section className='relative bg-secondary py-16 px-4 sm:px-8 bg-first-section'>
-      <div className="container mx-auto text-white text-center flex flex-col items-center">
-        <Image
-          width={267}
-          height={53}
-          src="/static/header-logo.png"
-          alt="ARC Agency Logo"
-          className='max-w-[267px] mb-8'
-        />
-        <h2 className='w-full max-w-[830px] mb-4 font-semibold text-2xl sm:text-3xl lg:text-4xl xl:text-title'>
-          {heading}
-        </h2>
-        <p className='max-w-[858px] sm:text-lg lg:text-2xl xl:text-[22px] mb-12'>
-          {description}
-        </p>
-        <ContactInput />
+    <section className='relative pt-4 pb-16 px-4 sm:px-8'>
+      <div className="container mx-auto">    
+        <h2 className='text-2xl sm:text-3xl xl:text-4xl text-center font-semibold mx-auto mb-4 sm:mb-16'>Lo que dicen nuestros clientes de nuestros servicios</h2>
+        <div className='space-y-8'>
+          {testimonials.map((testimonial, index) => (
+            <div 
+              key={index} 
+              className={`transform ${index % 2 === 0 ? 'md:-translate-x-20' : 'md:translate-x-20'}`}
+            >
+              <TestimonialCard
+                name={testimonial.name}
+                title={testimonial.title}
+                image={testimonial.image}
+                stars={5}
+                description={testimonial.description}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
