@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <header className="absolute top-0 left-0 w-full bg-transparent px-4 sm:px-8 pt-6 md:pt-12 z-10">
       <div className="container mx-auto flex items-center justify-between py-4">
-        <Image width={158} height={32} src="/static/header-logo.png" alt="ARC Agency Logo" className='max-w-[158px] max-h-8 mr-4'/>
+        <Image width={158} height={32} src="/static/header-logo.png" alt="ARC Agency Logo" className='max-w-[158px] max-h-8 mr-auto md:mr-4'/>
         <nav className="hidden md:flex items-center space-x-4 xl:space-x-7 ml-auto mr-8 xl:mr-16 xl:text-lg text-center text-white font-semibold">
           <Link href="/about-us" className='transition-all hover:text-primary'>
             {aboutUs}
