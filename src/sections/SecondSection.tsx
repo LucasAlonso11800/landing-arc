@@ -6,19 +6,20 @@ import React from 'react';
 const texts = {
   'en-US': {
     heading: 'Get a Better Return on Investment',
-    description: `“At our agency, we are dedicated to improving the online presence of businesses and professionals through effective Google Ads campaigns. 
-    We specialize in generating a real increase in your billing levels, working hand in hand with our clients as part of their strategic team.”`,
-    name: 'Juancho BCL',
+    description: `“At our agency, we are dedicated to growing your business through effective Google Ads campaigns. 
+    We transform every dollar invested into real sales, allowing you to focus on business growth.”`,
+    name: 'Juan Martín Barrionuevo',
     title: 'CEO ARC Agency'
   },
   'es-ES': {
     heading: 'Obtenga un mejor retorno de la inversión',
-    description: `“En nuestra agencia, nos dedicamos a mejorar la presencia en línea de empresas y profesionales mediante campañas de Google Ads efectivas. 
-    Nos especializamos en generar un aumento real en sus niveles de facturación, trabajando mano a mano con nuestros clientes como parte de su equipo estratégico.”`,
-    name: 'Juancho BCL',
+    description: `“En nuestra agencia, nos dedicamos a hacer crecer el negocio mediante campañas efectivas de Google Ads.
+    Transformamos cada peso invertido en ventas reales, permitiendo concentrarse en el crecimiento empresarial.”`,
+    name: 'Juan Martín Barrionuevo',
     title: 'CEO ARC Agencia'
   }
 };
+
 
 
 export default function SecondSection() {

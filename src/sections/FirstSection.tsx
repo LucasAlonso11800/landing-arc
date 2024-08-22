@@ -7,12 +7,12 @@ const texts = {
   'en-US': {
     title: 'Boost Your Business with',
     highlightedTitle: 'Google Ads',
-    description: 'Maximize Your ROI and Increase Sales with Customized Strategies'
+    description: 'Turn advertising investment into real results and continuous growth without hassle.'
   },
   'es-ES': {
     title: 'Impulsa tu Negocio con',
     highlightedTitle: 'Google Ads',
-    description: 'Maximiza tu ROI y Aumenta tus Ventas con Estrategias Personalizadas'
+    description: 'Convierte la inversión publicitaria en resultados reales y en crecimiento continuo sin complicaciones.'
   }
 };
 

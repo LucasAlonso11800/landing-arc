@@ -7,7 +7,7 @@ const texts = {
   "en-US": {
     helpGrow: "We help you grow",
     readyForResults: "Are You Ready to See Real Results?",
-    description1: "Imagine taking your business to the next level with an advertising campaign that truly works. We help you turn that vision into reality.",
+    description1: "Imagine a scenario where you don’t need to worry about advertising. ARC Agency makes it possible by turning your Google Ads investment into real sales, allowing for constant business growth without dedicating time to advertising.",
     description2: "Leverage our Google Ads expertise to leave behind strategies that haven't delivered and start seeing tangible growth.",
     description3: "We're here to provide you with an effective strategy that turns every click into a sales opportunity. Don’t wait any longer to achieve the success your business deserves.",
     requestAudit: "Request Your Audit",
@@ -15,7 +15,7 @@ const texts = {
   "es-ES": {
     helpGrow: "Te ayudamos a crecer",
     readyForResults: "¿Estás Listo para Ver Resultados Reales?",
-    description1: "Imagina cómo sería llevar tu negocio al siguiente nivel con una campaña publicitaria que realmente funcione. Nosotros te ayudamos a convertir esa visión en realidad.",
+    description1: "Imagina un escenario donde no es necesario preocuparse por la publicidad. ARC Agencia lo hace posible, convirtiendo la inversión en Google Ads en ventas reales, permitiendo un crecimiento constante del negocio sin necesidad de dedicar tiempo a la publicidad.",
     description2: "Aprovecha nuestra experiencia en Google Ads para dejar atrás las estrategias que no te han dado resultados y comenzar a ver un crecimiento tangible.",
     description3: "Estamos aquí para ofrecerte una estrategia efectiva que transforme cada clic en una oportunidad de venta. No esperes más para alcanzar el éxito que tu negocio merece.",
     requestAudit: "Solicita Tu Auditoría",

@@ -7,7 +7,7 @@ const texts = {
   'en-US': {
     helpGrow: 'We help you grow',
     improveOnlineAdvertising: 'How We Improve Your Online Advertising',
-    focusExperience: 'We focus our experience on maximizing every dollar invested in your campaigns. Through comprehensive audits, precise optimization, and detailed analysis, we transform your online advertising into a machine for generating concrete and measurable results.',
+    focusExperience: 'We focus our experience on maximizing every dollar invested in your campaigns. From a comprehensive audit to continuous optimization, we transform your online advertising into a results-generating machine that directly impacts your business.',
     requestAudit: 'Request Your Audit',
     auditComplete: 'Complete Audit',
     auditDescription: 'Let’s deeply analyze your Google Ads account with a complete audit. We’ll review everything, provide a detailed report, and discuss our findings and recommendations in a dedicated session.',
@@ -19,16 +19,17 @@ const texts = {
   'es-ES': {
     helpGrow: 'Te ayudamos a crecer',
     improveOnlineAdvertising: 'Cómo Mejoramos tu Publicidad Online',
-    focusExperience: 'Enfocamos nuestra experiencia para maximizar cada dólar invertido en tus campañas.  A través de una auditoría exhaustiva, optimización precisa y análisis detallado, transformamos tu publicidad online en una máquina de generar resultados concretos y medibles.',
+    focusExperience: 'El enfoque está en maximizar cada peso invertido sin la necesidad de preocuparse por los detalles técnicos. Desde una auditoría exhaustiva hasta la optimización continua, transformamos la publicidad online en una máquina de generar resultados que impactan directamente en el negocio.',
     requestAudit: 'Solicita Tu Auditoría',
     auditComplete: 'Auditoría Completa',
     auditDescription: 'Analicemos en profundidad su cuenta de Google Ads con una auditoría completa. Analizaremos todo, le proporcionaremos un informe detallado y analizaremos nuestros hallazgos y recomendaciones en una sesión dedicada.',
-    optimizeCampaigns: 'Optimizar campañas',
+    optimizeCampaigns: 'Optimizar Campañas',
     optimizeDescription: 'Implementamos mejoras basadas en la auditoría para maximizar el rendimiento de sus campañas. Utilizamos herramientas avanzadas como Google Tag Manager y Google Analytics 4 para ajustar configuraciones y asegurar una ejecución efectiva.',
-    increaseLeadsSales: 'Aumentar los clientes potenciales y las ventas',
-    increaseDescription: 'Nos enfocamos en aumentar el número de clientes potenciales y mejorar las ventas. Monitoreamos el rendimiento y realizamos ajustes continuos para garantizar el máximo retorno de inversión y lograr resultados óptimos para su negocio.'
+    increaseLeadsSales: 'Aumentar Clientes Potenciales y Ventas',
+    increaseDescription: 'Nos enfocamos en aumentar los clientes y las ventas del negocio. Monitoreamos y ajustamos todo lo necesario para garantizar que la inversión rinda al máximo.'
   }
 };
+
 
 export default function FourthSection() {
   const locale = getServerLocale();
