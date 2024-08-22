@@ -2,7 +2,7 @@ import React from 'react';
 import { TestimonialCard } from '@/components';
 import { getServerLocale } from '@/helpers/getServerLocale';
 
-const testimonials = {
+export const testimonials = {
   'en-US': [
     {
       name: 'Juan Pérez',
@@ -71,11 +71,8 @@ export default function SeventhSection() {
               className={`transform ${index % 2 === 0 ? 'md:-translate-x-20' : 'md:translate-x-20'}`}
             >
               <TestimonialCard
-                name={testimonial.name}
-                title={testimonial.title}
-                image={testimonial.image}
+                {...testimonial}
                 stars={5}
-                description={testimonial.description}
               />
             </div>
           ))}

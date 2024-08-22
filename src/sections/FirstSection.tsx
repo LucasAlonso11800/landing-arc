@@ -1,24 +1,43 @@
 import React from 'react';
-import { ContactInput } from '@/components';
+import { AdsCard, ContactInput, TestimonialCard } from '@/components';
 import { getServerLocale } from '@/helpers/getServerLocale';
 import Image from 'next/image';
+import { testimonials } from './SeventhSection';
 
 const texts = {
   'en-US': {
     title: 'Boost Your Business with',
     highlightedTitle: 'Google Ads',
-    description: 'Turn advertising investment into real results and continuous growth without hassle.'
+    description: 'Turn advertising investment into real results and continuous growth without hassle.',
+    conversions: {
+      title: 'Conversions',
+      data: '1996',
+    },
+    conversionRate: {
+      title: 'Conversion Rate',
+      data: '19%',
+    },
   },
   'es-ES': {
     title: 'Impulsa tu Negocio con',
     highlightedTitle: 'Google Ads',
-    description: 'Convierte la inversión publicitaria en resultados reales y en crecimiento continuo sin complicaciones.'
+    description: 'Convierte la inversión publicitaria en resultados reales y en crecimiento continuo sin complicaciones.',
+    conversions: {
+      title: 'Conversiones',
+      data: '1996',
+    },
+    conversionRate: {
+      title: 'Tasa de Conversión',
+      data: '19%',
+    },
   }
 };
 
+
+
 export default function FirstSection() {
   const locale = getServerLocale()
-  const { title, highlightedTitle, description } = texts[locale];
+  const { title, highlightedTitle, description, conversionRate, conversions } = texts[locale];
 
   return (
     <section className="relative bg-secondary pt-[144px] lg:pt-[215px] pb-8 px-4 sm:px-8 bg-first-section">
@@ -31,16 +50,15 @@ export default function FirstSection() {
           <p className='sm:text-lg lg:text-xl mb-10 leading-tight font-semibold'>{description}</p>
           <ContactInput />
         </div>
-        <div className='hidden md:block'>
-          <div className="relative ml-8 xl:ml-16">
+        <div className='hidden md:block ml-8 xl:ml-16 '>
+          <div className="relative mb-16">
             <img width={588} src="/static/ilustracion-ads.png" alt="Ilustracion" className='w-full xl:max-w-[588px]' />
-            <div className="absolute -bottom-8 right-0 xl:right-8 z-10 flex items center">
-              <Image width={150} height={100} src="/static/ilustracion-card-ads.png" alt="Ilustracion Card" className='max-w-[150px]' />
-              <Image width={150} height={100} src="/static/ilustracion-card-ads-2.png" alt="Ilustracion Card 2" className='ml-4 max-w-[150px]' />
+            <div className="absolute -bottom-20 right-0 xl:right-8 z-10 flex items center gap-4">
+                <AdsCard {...conversions} />
+                <AdsCard {...conversionRate} />
             </div>
           </div>
-          <Image width={630} height={100} src="/static/testimonial-main.png" alt="Testimonial" className='w-full max-w-[630px] mt-4'/>
-        </div>
+          </div>
       </div>
     </section>
   );

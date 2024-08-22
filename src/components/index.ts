@@ -1,3 +1,4 @@
+export { default as AdsCard } from './AdsCard'
 export { default as Button } from './Button'
 export { default as ContactInput } from './ContactInput'
 export { default as Footer } from './Footer'
