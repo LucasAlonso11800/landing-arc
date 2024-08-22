@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { getServerLocale } from '@/helpers/getServerLocale';
+import { SelectLanguages } from '.'
 
 const texts = {
   'en-US': {

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Button from './Button';
 import { getServerLocale } from '@/helpers/getServerLocale';
 import Image from 'next/image';
+import SelectLanguages from './SelectLanguages';
 
 const texts = {
   'en-US': {
@@ -46,6 +47,7 @@ export default function Header() {
         <Button>
           {contactUs}
         </Button>
+        <SelectLanguages />
       </div>
     </header>
   );
