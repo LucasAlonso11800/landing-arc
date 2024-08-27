@@ -60,6 +60,6 @@ export const config = {
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
      */
-    "/((?!api|static|_next/static|_next/image|favicon.ico).*)",
+    "/((?!api|static|_next/static|_next/image|icon.ico|arc-image.jpg).*)",
   ],
 };
