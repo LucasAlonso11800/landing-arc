@@ -23,7 +23,7 @@ export default function SelectLanguages() {
 
   const options: Option[] = [{ value: 'en-US', label: 'EN' }, { value:'es-ES', label: 'ES' }];
   const selectedOption = options.find((o) => o.value === locale);
-  console.log(selectedOption)
+
   const handleChange = (option: Option) => {
     const route = pathname.replace(`${params.locale}`, option.value);
     push(route);
