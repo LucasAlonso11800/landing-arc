@@ -2,6 +2,7 @@ import { Button } from '@/components';
 import Image from 'next/image';
 import React from 'react';
 import { getServerLocale } from '@/helpers/getServerLocale';
+import Link from 'next/link';
 
 const texts = {
   'en-US': {
@@ -36,7 +37,7 @@ export default function FourthSection() {
   const { helpGrow, improveOnlineAdvertising, focusExperience, requestAudit, auditComplete, auditDescription, optimizeCampaigns, optimizeDescription, increaseLeadsSales, increaseDescription } = texts[locale];
 
   return (
-    <section className='py-32 px-4 sm:px-8'>
+    <section className='py-32 px-4 sm:px-8' id="services">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-around">
         <div className='min-w-[300px] mb-16 md:mb-0'>
           <div className="flex items-center mb-5">
@@ -55,9 +56,11 @@ export default function FourthSection() {
           <p className='text-sm sm:text-base lg:text-lg text-gray mb-5 max-w-[525px] tracking-tight'>
             {focusExperience}
           </p>
-          <Button>
-            {requestAudit}
-          </Button>
+          <Link href="#contact">
+            <Button>
+              {requestAudit}
+            </Button>
+          </Link>
         </div>
         <div className="md:ml-8 xl:ml-20 relative grow max-w-[666px]">
           <div className="flex mb-8">

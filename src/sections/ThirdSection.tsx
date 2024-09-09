@@ -18,7 +18,7 @@ export default function ThirdSection() {
   const { subtitle, title } = texts[locale];
 
   return (
-    <section className='py-6 px-4 sm:px-8'>
+    <section className='py-6 px-4 sm:px-8' id='what-we-do'>
       <div className="container mx-auto">
         <p className='sm:text-lg lg:text-xl text-primary text-center font-semibold mb-4'>
           {subtitle}

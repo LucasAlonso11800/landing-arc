@@ -61,7 +61,7 @@ export const testimonials = {
 export default function SeventhSection() {
   const locale = getServerLocale();
   return (
-    <section className='relative pt-4 pb-16 px-4 sm:px-8'>
+    <section className='relative pt-4 pb-16 px-4 sm:px-8' id="testimonials">
       <div className="container mx-auto">    
         <h2 className='text-2xl sm:text-3xl xl:text-4xl text-center font-semibold mx-auto mb-4 sm:mb-16'>Lo que dicen nuestros clientes de nuestros servicios</h2>
         <div className='space-y-8'>

@@ -22,7 +22,7 @@ export default function EighthSection() {
   const { heading, description1, description2 } = texts[locale];
 
   return (
-    <section className='relative bg-secondary py-16 px-4 sm:px-8 bg-first-section'>
+    <section className='relative bg-secondary py-16 px-4 sm:px-8 bg-first-section' id='contact'>
       <div className="container mx-auto text-white text-center flex flex-col items-center">
         <Image
           width={267}

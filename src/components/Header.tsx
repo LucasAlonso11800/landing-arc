@@ -31,22 +31,24 @@ export default function Header() {
       <div className="container mx-auto flex items-center justify-between py-4">
         <Image width={158} height={32} src="/static/header-logo.png" alt="ARC Agency Logo" className='max-w-[120px] sm:max-w-[158px] max-h-8 mr-auto lg:mr-4'/>
         <nav className="hidden lg:flex items-center space-x-4 xl:space-x-7 ml-auto mr-8 xl:mr-16 xl:text-lg text-center text-white font-semibold">
-          <Link href="/about-us" className='transition-all hover:text-primary'>
+          <Link href="#about-us" className='transition-all hover:text-primary'>
             {aboutUs}
           </Link>
-          <Link href="/what-we-do" className='transition-all hover:text-primary'>
+          <Link href="#what-we-do" className='transition-all hover:text-primary'>
             {whatWeDo}
           </Link>
-          <Link href="/services" className='transition-all hover:text-primary'>
+          <Link href="#services" className='transition-all hover:text-primary'>
             {services}
           </Link>
-          <Link href="/testimonials" className='transition-all hover:text-primary'>
+          <Link href="#testimonials" className='transition-all hover:text-primary'>
             {testimonials}
           </Link>
         </nav>
-        <Button>
-          {contactUs}
-        </Button>
+        <Link href="#contact">
+          <Button>
+            {contactUs}
+          </Button>
+        </Link>
         <SelectLanguages />
       </div>
     </header>

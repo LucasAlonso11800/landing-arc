@@ -2,6 +2,7 @@ import { Button } from "@/components";
 import Image from "next/image";
 import React from "react";
 import { getServerLocale } from "@/helpers/getServerLocale";
+import Link from "next/link";
 
 const texts = {
   "en-US": {
@@ -66,7 +67,9 @@ export default function SixthSection() {
             <br/>
             {description3}
           </p>
-          <Button>{requestAudit}</Button>
+          <Link href="#contact">
+            <Button>{requestAudit}</Button>
+          </Link>
         </div>
       </div>
     </section>
