@@ -1,4 +1,4 @@
-import { getServerLocale } from '@/helpers/getServerLocale';
+import { getClientLocale } from '@/helpers/getClientLocale';
 import Image from 'next/image';
 import React from 'react';
 
@@ -14,7 +14,7 @@ const texts = {
 };
 
 export default function FifthSection() {
-  const locale = getServerLocale();
+  const locale = getClientLocale();
   const { heading, description } = texts[locale];
 
   return (

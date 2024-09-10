@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { getServerLocale } from '@/helpers/getServerLocale';
+import { getClientLocale } from '@/helpers/getClientLocale';
 import { SelectLanguages } from '.'
 
 const texts = {
@@ -13,7 +13,7 @@ const texts = {
 };
 
 export default function Footer() {
-  const locale = getServerLocale();
+  const locale = getClientLocale();
   const { reserved } = texts[locale];
 
   return (

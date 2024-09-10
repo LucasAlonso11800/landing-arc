@@ -1,5 +1,5 @@
 import { ContactInput } from '@/components';
-import { getServerLocale } from '@/helpers/getServerLocale';
+import { getClientLocale } from '@/helpers/getClientLocale';
 import Image from 'next/image';
 import React from 'react';
 
@@ -18,7 +18,7 @@ const texts = {
 
 
 export default function EighthSection() {
-  const locale = getServerLocale();
+  const locale = getClientLocale();
   const { heading, description1, description2 } = texts[locale];
 
   return (

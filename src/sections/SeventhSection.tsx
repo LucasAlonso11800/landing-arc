@@ -1,6 +1,6 @@
 import React from 'react';
 import { TestimonialCard } from '@/components';
-import { getServerLocale } from '@/helpers/getServerLocale';
+import { getClientLocale } from '@/helpers/getClientLocale';
 
 export const testimonials = {
   'en-US': [
@@ -59,7 +59,7 @@ export const testimonials = {
 
 
 export default function SeventhSection() {
-  const locale = getServerLocale();
+  const locale = getClientLocale();
   return (
     <section className='relative pt-4 pb-16 px-4 sm:px-8' id="testimonials">
       <div className="container mx-auto">    

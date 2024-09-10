@@ -1,6 +1,6 @@
 import React from 'react';
 import { AdsCard, ContactInput, TestimonialCard } from '@/components';
-import { getServerLocale } from '@/helpers/getServerLocale';
+import { getClientLocale } from '@/helpers/getClientLocale';
 import Image from 'next/image';
 import { testimonials } from './SeventhSection';
 
@@ -36,7 +36,7 @@ const texts = {
 
 
 export default function FirstSection() {
-  const locale = getServerLocale()
+  const locale = getClientLocale()
   const { title, highlightedTitle, description, conversionRate, conversions } = texts[locale];
 
   return (

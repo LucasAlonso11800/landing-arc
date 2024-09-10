@@ -1,6 +1,7 @@
+"use client";
+
 import { Footer, Header } from "@/components";
-import { EighthSection, FifthSection, FirstSection, SecondSection, SeventhSection, SixthSection, ThirdSection } from "@/sections";
-import FourthSection from "@/sections/FourthSection";
+import { EighthSection, FifthSection, FirstSection, SecondSection, FourthSection, SeventhSection, SixthSection, ThirdSection } from "@/sections";
 
 export default function Home() {
   return (

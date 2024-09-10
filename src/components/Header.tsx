@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Button from './Button';
-import { getServerLocale } from '@/helpers/getServerLocale';
+import { getClientLocale } from '@/helpers/getClientLocale';
 import Image from 'next/image';
 import SelectLanguages from './SelectLanguages';
 
@@ -23,7 +23,7 @@ const texts = {
 };
 
 export default function Header() {
-  const locale = getServerLocale();
+  const locale = getClientLocale();
   const { aboutUs, whatWeDo, services, testimonials, contactUs } = texts[locale];
 
   return (
